@@ -1,0 +1,60 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 1s ease-in;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cryptic-message {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    cursor: pointer;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.collage a {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.collage a:hover img {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.7;
+}

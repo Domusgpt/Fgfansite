@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Frequency Golems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            transform: rotate(15deg);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Frequency Golems</h1>
+        <p class="cryptic-message">"The Frequency Golems own all the capital letters."</p>
+        <div class="emoji" id="toggleDarkMode">🕶️</div>
+        <div class="collage" id="collage">
+            <a href="subpage1.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image1.jpg" alt="Clue 1" style="top: 50px; left: 50px;"></a>
+            <a href="subpage2.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image2.jpg" alt="Red Herring 1" style="top: 150px; left: 200px;"></a>
+            <a href="subpage3.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image3.jpg" alt="Clue 2" style="top: 250px; left: 400px;"></a>
+            <a href="subpage4.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image4.jpg" alt="Red Herring 2" style="top: 350px; left: 600px;"></a>
+            <a href="subpage5.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image5.jpg" alt="Clue 3" style="top: 450px; left: 800px;"></a>
+            <a href="subpage6.html"><img src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/image6.jpg" alt="Red Herring 3" style="top: 550px; left: 1000px;"></a>
+            <!-- Repeat for all 40 images, adding unique styles -->
+        </div>
+        <button onclick="toggleMusic()">Toggle Music</button>
+        <audio id="backgroundMusic" loop>
+            <source src="https://raw.githubusercontent.com/Domusgpt/Fgfansite/main/assets/background.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
